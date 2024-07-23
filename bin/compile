@@ -49,7 +49,7 @@ curl -sSL https://install.python-poetry.org | python3 | indent
 $BUILD_DIR/.local/bin/poetry --version
 
 log "Add Poetry to the PATH"
-export PATH="/app/.local/bin:$PATH"
+export PATH="$BUILD_DIR/.local/bin:$PATH"
 
 if [ "${POETRY_VERSION:0:3}" = "1.2" ] ; then
     # Allow `poetry export` to work even if we aren't using the Python version that the project will ultimately run in
