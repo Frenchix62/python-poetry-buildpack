@@ -46,6 +46,8 @@ log "Generate requirements.txt with Poetry"
 log "Install Poetry"
 curl -sSL https://install.python-poetry.org | python3 | indent
 
+/build/6d0641e1-b970-410b-9364-650114ddef33/.local/bin/poetry --version
+
 log "Add Poetry to the PATH"
 export PATH="/app/.local/bin:$PATH"
 
